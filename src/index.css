@@ -1,0 +1,93 @@
+:root {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937;
+  background:
+    radial-gradient(circle at top left, rgba(230, 190, 138, 0.32), transparent 28%),
+    radial-gradient(circle at right, rgba(54, 116, 181, 0.18), transparent 24%),
+    linear-gradient(180deg, #f9f4ea 0%, #f4efe5 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --heading: #14213d;
+  --text: #334155;
+  --muted: #64748b;
+  --panel: rgba(255, 252, 245, 0.88);
+  --panel-alt: #f4ecdf;
+  --border: rgba(148, 163, 184, 0.25);
+  --accent: #d97706;
+  --accent-strong: #0f4c81;
+  --accent-soft: rgba(217, 119, 6, 0.15);
+  --shadow: 0 20px 45px rgba(20, 33, 61, 0.09);
+
+  --priority-high-bg: #fee2e2;
+  --priority-high-text: #b91c1c;
+  --priority-medium-bg: #fef3c7;
+  --priority-medium-text: #92400e;
+  --priority-low-bg: #dcfce7;
+  --priority-low-text: #166534;
+}
+
+html[data-theme='night'] {
+  color: #dbe4f0;
+  background:
+    radial-gradient(circle at top left, rgba(217, 119, 6, 0.16), transparent 24%),
+    radial-gradient(circle at right, rgba(89, 162, 255, 0.16), transparent 24%),
+    linear-gradient(180deg, #111827 0%, #0f172a 100%);
+
+  --heading: #f8fafc;
+  --text: #d3dce8;
+  --muted: #94a3b8;
+  --panel: rgba(15, 23, 42, 0.82);
+  --panel-alt: #162338;
+  --border: rgba(148, 163, 184, 0.18);
+  --accent: #f59e0b;
+  --accent-strong: #60a5fa;
+  --accent-soft: rgba(245, 158, 11, 0.18);
+  --shadow: 0 26px 54px rgba(2, 6, 23, 0.42);
+
+  --priority-high-bg: #450a0a;
+  --priority-high-text: #fca5a5;
+  --priority-medium-bg: #451a03;
+  --priority-medium-text: #fcd34d;
+  --priority-low-bg: #052e16;
+  --priority-low-text: #86efac;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--text);
+  background: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(15, 76, 129, 0.24);
+  outline-offset: 2px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
